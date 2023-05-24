@@ -1,18 +1,17 @@
 package br.com.salomaotech.design.patterns;
 
-import br.com.salomaotech.design.patterns.criacional.ConexaoSingleton;
+import br.com.salomaotech.design.patterns.factorymethod.CalculaImposto;
 
 public class App {
 
     public static void main(String[] args) {
 
-        ConexaoSingleton conexao1 = ConexaoSingleton.getConexaoSingleton();
-        ConexaoSingleton conexao2 = ConexaoSingleton.getConexaoSingleton();
-        ConexaoSingleton conexao3 = ConexaoSingleton.getConexaoSingleton();
+        CalculaImposto calculaImposto = new CalculaImposto();
+        System.out.println("Mouse: " + calculaImposto.calcular("Mouse"));
+        System.out.println("Teclado: " + calculaImposto.calcular("Teclado"));
+        System.out.println("Monitor: " + calculaImposto.calcular("Monitor"));
+        System.out.println("SSD: " + calculaImposto.calcular("Ssd"));
 
-        // Conexao conexao1 = new Conexao();
-        //  Conexao conexao2 = new Conexao();
-        //  Conexao conexao3 = new Conexao();
     }
 
 }
