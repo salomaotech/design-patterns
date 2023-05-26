@@ -5,6 +5,8 @@ import br.com.salomaotech.design.patterns.criacional.abstractfactory.FabricaHp;
 import br.com.salomaotech.design.patterns.criacional.abstractfactory.FabricaMicrosoft;
 import br.com.salomaotech.design.patterns.criacional.abstractfactory.Mouse;
 import br.com.salomaotech.design.patterns.criacional.abstractfactory.Teclado;
+import br.com.salomaotech.design.patterns.criacional.builder.Computador;
+import br.com.salomaotech.design.patterns.criacional.builder.Diretor;
 import br.com.salomaotech.design.patterns.criacional.factorymethod.CalculaImposto;
 import br.com.salomaotech.design.patterns.criacional.singleton.ConexaoSingleton;
 
@@ -60,14 +62,9 @@ public class App {
 
     public static void main(String[] args) {
 
-        /* singleton */
-        singleton();
-
-        /* factory method */
-        factoryMethod();
-
-        /* abstract factory */
-        abstractfactory();
+        Diretor diretor = new Diretor();
+        Computador computador = diretor.construir("caro");
+      //  System.out.println(computador.toString());
 
     }
 

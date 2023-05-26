@@ -1,0 +1,25 @@
+0 - Crie ou não a classe cliente
+1 - Crie a classe Computador (objeto real)
+2 - Crie a interface builder retornando ela mesma nos métodos
+3 - Implemente o contrato da interface
+4 - Crie o diretor que irá escolher a builder filha a ser chamada
+5 - Devolva o objeto para o cliente
+
+(Obs: nos métodos do ComputadorBuilder, puxar o valor do produto com base nos itens já adicionados)
+
+
+*Computador Caro
+Processador: Intel Core i7 (R$ 3.000,00)
+Memória RAM: 16GB (R$ 500,00)
+Placa de vídeo: NVIDIA GeForce RTX 3080 (R$ 6.000,00)
+Possui SSD: Sim (R$ 400,00)
+
+
+--------------------------------------------------------------------
+
+
+*Computador Barato
+Processador: Intel Core i3 (R$ 500,00)
+Memória RAM: 8GB (R$ 250,00)
+Placa de vídeo: NVIDIA GeForce GTX 1650 (R$ 1.000,00)
+Possui SSD: Não (R$ 100,00)
