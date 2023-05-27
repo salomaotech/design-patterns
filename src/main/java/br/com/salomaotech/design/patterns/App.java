@@ -9,6 +9,9 @@ import br.com.salomaotech.design.patterns.criacional.builder.Computador;
 import br.com.salomaotech.design.patterns.criacional.builder.Diretor;
 import br.com.salomaotech.design.patterns.criacional.factorymethod.CalculaImposto;
 import br.com.salomaotech.design.patterns.criacional.singleton.ConexaoSingleton;
+import br.com.salomaotech.design.patterns.estrutural.ConsultarCepAdapter;
+import br.com.salomaotech.design.patterns.estrutural.ConsultarCepTarget;
+import br.com.salomaotech.modelos.Cep;
 
 public class App {
 
@@ -60,11 +63,26 @@ public class App {
 
     }
 
-    public static void main(String[] args) {
+    private static void builder() {
 
         Diretor diretor = new Diretor();
         Computador computador = diretor.construir("caro");
-      //  System.out.println(computador.toString());
+        System.out.println(computador.toString());
+
+    }
+
+    private static void adapter() {
+
+        ConsultarCepTarget consultarCep = new ConsultarCepAdapter();
+        Cep cep = consultarCep.consultarCep("01001000");
+
+        System.out.println("Código postal: " + cep.getCodigoPostal());
+        System.out.println("Cidade: " + cep.getCidade());
+        System.out.println("Estado: " + cep.getEstado());
+
+    }
+
+    public static void main(String[] args) {
 
     }
 
