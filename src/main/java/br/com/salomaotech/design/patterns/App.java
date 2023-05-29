@@ -9,9 +9,12 @@ import br.com.salomaotech.design.patterns.criacional.builder.Computador;
 import br.com.salomaotech.design.patterns.criacional.builder.Diretor;
 import br.com.salomaotech.design.patterns.criacional.factorymethod.CalculaImposto;
 import br.com.salomaotech.design.patterns.criacional.singleton.ConexaoSingleton;
-import br.com.salomaotech.design.patterns.estrutural.ConsultarCepAdapter;
-import br.com.salomaotech.design.patterns.estrutural.ConsultarCepTarget;
-import br.com.salomaotech.modelos.Cep;
+import br.com.salomaotech.design.patterns.estrutural.adapter.ConsultarCepAdapter;
+import br.com.salomaotech.design.patterns.estrutural.adapter.ConsultarCepTarget;
+import br.com.salomaotech.design.patterns.estrutural.decorator.ConsultaDnsDecorator;
+import br.com.salomaotech.modelos.cep.Cep;
+import br.com.salomaotech.modelos.dns.ConsultaDns;
+import br.com.salomaotech.modelos.dns.Dns;
 
 public class App {
 
@@ -79,6 +82,22 @@ public class App {
         System.out.println("Código postal: " + cep.getCodigoPostal());
         System.out.println("Cidade: " + cep.getCidade());
         System.out.println("Estado: " + cep.getEstado());
+
+    }
+
+    private static void decorator() {
+
+        Dns dns = new ConsultaDnsDecorator(new ConsultaDns());
+
+        /*usando chache */
+        System.out.println(dns.getIp("www.google.com"));
+        System.out.println(dns.getIp("www.google.com"));
+        System.out.println(dns.getIp("www.google.com"));
+        System.out.println(dns.getIp("www.google.com"));
+        System.out.println(dns.getIp("www.facebook.com"));
+        System.out.println(dns.getIp("www.facebook.com"));
+        System.out.println(dns.getIp("www.facebook.com"));
+        System.out.println(dns.getIp("www.facebook.com"));
 
     }
 

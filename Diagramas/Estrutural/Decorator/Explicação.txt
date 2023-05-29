@@ -1,0 +1,14 @@
+1 - Crie a classe ou interface que irá processar o DNS:
+* Essa classe ou interface representa a funcionalidade básica que você deseja decorar.
+
+2 - Implemente ou estenda a classe ou interface:
+* Crie uma implementação concreta da classe ou estenda a classe base, se necessário.
+* Essa implementação será o objeto base que será decorado.
+
+3 - Implemente o decorator para adicionar uma nova funcionalidade (no caso, cache):
+* Crie uma classe decoradora que implemente a mesma interface da classe base ou estenda a mesma classe base.
+* O decorator deve possuir uma referência ao objeto base que será decorado.
+
+4 - O cliente consome o decorator utilizando polimorfismo:
+* O cliente interage com o objeto base ou o objeto decorado usando a mesma interface da classe base.
+* O cliente pode tratar o objeto decorado como se fosse um objeto da classe base, aproveitando o polimorfismo.
