@@ -12,9 +12,15 @@ import br.com.salomaotech.design.patterns.criacional.singleton.ConexaoSingleton;
 import br.com.salomaotech.design.patterns.estrutural.adapter.ConsultarCepAdapter;
 import br.com.salomaotech.design.patterns.estrutural.adapter.ConsultarCepTarget;
 import br.com.salomaotech.design.patterns.estrutural.decorator.ConsultaDnsDecorator;
+import br.com.salomaotech.design.patterns.estrutural.proxy.LeitorDeImagemProxy;
 import br.com.salomaotech.modelos.cep.Cep;
 import br.com.salomaotech.modelos.dns.ConsultaDns;
 import br.com.salomaotech.modelos.dns.Dns;
+import br.com.salomaotech.modelos.leitores.LeitorDeImagem;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 public class App {
 
@@ -101,7 +107,39 @@ public class App {
 
     }
 
+    private static void lerImagem() {
+
+        JFrame frame = new JFrame("Salomão Tech");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(400, 400);
+
+        String imagePath = "C:\\Users\\usuario\\Desktop\\Nova pasta\\freeza-8-mil.jpg";
+
+        LeitorDeImagem leitorDeImagem = new LeitorDeImagemProxy();
+
+        byte[] imageBytes = null;
+
+        for (int i = 0; i <= 10000; i++) {
+
+            imageBytes = leitorDeImagem.getImagemBytes(imagePath);
+
+        }
+
+        if (imageBytes != null) {
+
+            ImageIcon imageIcon = new ImageIcon(imageBytes);
+            JLabel label = new JLabel(imageIcon);
+            frame.getContentPane().add(label);
+
+        }
+
+        frame.setVisible(true);
+
+    }
+
     public static void main(String[] args) {
+
+        lerImagem();
 
     }
 

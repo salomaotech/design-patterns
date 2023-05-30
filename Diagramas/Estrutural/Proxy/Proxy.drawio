@@ -1,0 +1,53 @@
+<mxfile host="Electron" modified="2023-05-30T14:36:23.294Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="BDLoP3nEhBnNfzWOJQNd" version="21.2.8" type="device">
+  <diagram name="Página-1" id="8A34iGCpDNREY9lOanAp">
+    <mxGraphModel dx="880" dy="532" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VAaOoYNewjKammYIFtlf-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;entryX=1.012;entryY=0.889;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="-hqrLETgz1vvv5t_kjo1-20" target="VAaOoYNewjKammYIFtlf-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="186" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-hqrLETgz1vvv5t_kjo1-20" value="Cliente" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="570" y="160" width="250" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="-hqrLETgz1vvv5t_kjo1-26" value="&lt;div&gt;1 - Extenda a classe para poder fazer o polimorfismo&lt;/div&gt;&lt;div&gt;2 - A classe extendida será o proxy&lt;/div&gt;&lt;div&gt;3 - O cliente irá usar o proxy pelo polimorfismo e não mais a classe original&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="40" y="685" width="420" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VAaOoYNewjKammYIFtlf-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;" edge="1" parent="1" source="VAaOoYNewjKammYIFtlf-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325.5" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VAaOoYNewjKammYIFtlf-1" value="LeitorDeImagemProxy" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="200" y="290" width="251" height="148" as="geometry" />
+        </mxCell>
+        <mxCell id="VAaOoYNewjKammYIFtlf-2" value="- leitorDeImagem:&amp;nbsp;LeitorDeImagem&lt;br&gt;&lt;br&gt;-&amp;nbsp;imagePathMap: HashMap" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VAaOoYNewjKammYIFtlf-1">
+          <mxGeometry y="26" width="251" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="VAaOoYNewjKammYIFtlf-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="VAaOoYNewjKammYIFtlf-1">
+          <mxGeometry y="80" width="251" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="VAaOoYNewjKammYIFtlf-4" value="+ LeitorDeImagemProxy()&lt;br&gt;&lt;br&gt;+&amp;nbsp;getImagemBytes(imagePath: string): byte[]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VAaOoYNewjKammYIFtlf-1">
+          <mxGeometry y="88" width="251" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VAaOoYNewjKammYIFtlf-5" value="LeitorDeImagem" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="200" y="160" width="251" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="VAaOoYNewjKammYIFtlf-8" value="+&amp;nbsp;getImagemBytes(imagePath: string): byte[]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="VAaOoYNewjKammYIFtlf-5">
+          <mxGeometry y="26" width="251" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="VAaOoYNewjKammYIFtlf-23" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;Proxy&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VAaOoYNewjKammYIFtlf-24" value="usa" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="650" y="220" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VAaOoYNewjKammYIFtlf-25" value="extende" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="250" width="70" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
