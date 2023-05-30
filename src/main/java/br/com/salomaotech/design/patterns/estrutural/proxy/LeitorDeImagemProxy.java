@@ -1,6 +1,6 @@
 package br.com.salomaotech.design.patterns.estrutural.proxy;
 
-import br.com.salomaotech.modelos.leitores.LeitorDeImagem;
+import br.com.salomaotech.modelos.manipula_arquivos.LeitorDeImagem;
 import java.util.HashMap;
 import java.util.Map;
 

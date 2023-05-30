@@ -1,0 +1,3 @@
+Estruturar um sistema em subsistemas ajuda a reduzir sua complexidade. A dependência existente entre os subsistemas pode ser minimizada através do uso de um objeto Facade, que fornece uma interface única e uniforme para as diversas funcionalidades de um subsistema.
+
+Quando existir um sistema complexo, na qual o cliente não precisa entender todo o sistema, o Facade possibilita um uso simplificado do sistema, apenas um subconjunto dele, ou utilizá-lo de uma maneira particular. Dispomos então de um sistema complicado, do qual precisamos utilizar somente uma parte, para um sistema simplificado, customizado para nossas necessidades.

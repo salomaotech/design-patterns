@@ -12,11 +12,12 @@ import br.com.salomaotech.design.patterns.criacional.singleton.ConexaoSingleton;
 import br.com.salomaotech.design.patterns.estrutural.adapter.ConsultarCepAdapter;
 import br.com.salomaotech.design.patterns.estrutural.adapter.ConsultarCepTarget;
 import br.com.salomaotech.design.patterns.estrutural.decorator.ConsultaDnsDecorator;
+import br.com.salomaotech.design.patterns.estrutural.facade.ManipulaArquivoFacade;
 import br.com.salomaotech.design.patterns.estrutural.proxy.LeitorDeImagemProxy;
 import br.com.salomaotech.modelos.cep.Cep;
 import br.com.salomaotech.modelos.dns.ConsultaDns;
 import br.com.salomaotech.modelos.dns.Dns;
-import br.com.salomaotech.modelos.leitores.LeitorDeImagem;
+import br.com.salomaotech.modelos.manipula_arquivos.LeitorDeImagem;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -107,7 +108,7 @@ public class App {
 
     }
 
-    private static void lerImagem() {
+    private static void proxy() {
 
         JFrame frame = new JFrame("Salomão Tech");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -137,9 +138,17 @@ public class App {
 
     }
 
-    public static void main(String[] args) {
+    private static void facade() {
 
-        lerImagem();
+        String caminhoArquivoOrigem = "C:\\Users\\usuario\\Documents\\NetBeansProjects\\design-patterns\\Diagramas\\Estrutural\\Facade\\texto_original.txt";
+        String caminhoArquivoDestino = "C:\\Users\\usuario\\Documents\\NetBeansProjects\\design-patterns\\Diagramas\\Estrutural\\Facade\\texto_salvo.txt";
+
+        ManipulaArquivoFacade manipulaArquivoFacade = new ManipulaArquivoFacade();
+        manipulaArquivoFacade.copiar(caminhoArquivoOrigem, caminhoArquivoDestino);
+
+    }
+
+    public static void main(String[] args) {
 
     }
 

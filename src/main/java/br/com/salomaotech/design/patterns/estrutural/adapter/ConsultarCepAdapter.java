@@ -1,8 +1,8 @@
 package br.com.salomaotech.design.patterns.estrutural.adapter;
 
 import br.com.salomaotech.modelos.cep.Cep;
-import br.com.salomaotech.modelos.leitores.LeitorDeJson;
-import br.com.salomaotech.modelos.leitores.LeitorDeXml;
+import br.com.salomaotech.modelos.manipula_arquivos.LeitorDeJson;
+import br.com.salomaotech.modelos.manipula_arquivos.LeitorDeXml;
 import java.util.Map;
 
 public class ConsultarCepAdapter implements ConsultarCepTarget {
