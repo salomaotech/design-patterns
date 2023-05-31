@@ -1,0 +1,63 @@
+<mxfile host="Electron" modified="2023-05-30T19:26:38.569Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="E1gpctIcxu26MFEOmpEV" version="21.2.8" type="device">
+  <diagram name="Página-1" id="8A34iGCpDNREY9lOanAp">
+    <mxGraphModel dx="880" dy="532" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5-Qjzil8mX76MX0-76Oo-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1" source="-hqrLETgz1vvv5t_kjo1-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-hqrLETgz1vvv5t_kjo1-20" value="Cliente" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="230" y="650" width="250" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="-hqrLETgz1vvv5t_kjo1-26" value="&lt;div&gt;1 - Crie uma classe que será a Fachada.&lt;/div&gt;&lt;div&gt;2 - Adicione as referências às classes que comporão a Fachada.&lt;/div&gt;&lt;div&gt;3 - Utilize a Fachada criada como uma interface de manipulação.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="40" y="940" width="370" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jxNUvcdN7oaNKjAE4kkv-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.385;entryY=-0.021;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=diamondThin;endFill=1;" parent="1" source="VAaOoYNewjKammYIFtlf-5" target="jxNUvcdN7oaNKjAE4kkv-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VAaOoYNewjKammYIFtlf-5" value="LeitorDeArquivo&lt;span style=&quot;color: rgb(255, 255, 255); font-family: &amp;quot;Söhne Mono&amp;quot;, Monaco, &amp;quot;Andale Mono&amp;quot;, &amp;quot;Ubuntu Mono&amp;quot;, monospace; font-size: 14px; font-weight: 400; text-align: left; background-color: rgb(0, 0, 0);&quot;&gt; &lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="40" y="201" width="251" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="VAaOoYNewjKammYIFtlf-8" value="+ ler(caminhoArquivo: string): string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="VAaOoYNewjKammYIFtlf-5" vertex="1">
+          <mxGeometry y="26" width="251" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="jxNUvcdN7oaNKjAE4kkv-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.538;entryY=-0.021;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=diamondThin;endFill=1;" parent="1" source="jxNUvcdN7oaNKjAE4kkv-1" target="jxNUvcdN7oaNKjAE4kkv-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jxNUvcdN7oaNKjAE4kkv-1" value="SalvaArquivo&lt;span style=&quot;color: rgb(255, 255, 255); font-family: &amp;quot;Söhne Mono&amp;quot;, Monaco, &amp;quot;Andale Mono&amp;quot;, &amp;quot;Ubuntu Mono&amp;quot;, monospace; font-size: 14px; font-weight: 400; text-align: left; background-color: rgb(0, 0, 0);&quot;&gt; &lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="320" y="201" width="310" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="jxNUvcdN7oaNKjAE4kkv-2" value="+ salvar(caminhoArquivo: string, string conteudo): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="jxNUvcdN7oaNKjAE4kkv-1" vertex="1">
+          <mxGeometry y="26" width="310" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="jxNUvcdN7oaNKjAE4kkv-3" value="ManipulaArquivoFacade" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="170" y="380" width="400" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="jxNUvcdN7oaNKjAE4kkv-4" value="- leitorDeArquivo: LeitorDeArquivo&lt;br&gt;&lt;br&gt;- salvarArquivo: SalvarArquivo" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="jxNUvcdN7oaNKjAE4kkv-3" vertex="1">
+          <mxGeometry y="26" width="400" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="jxNUvcdN7oaNKjAE4kkv-5" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="jxNUvcdN7oaNKjAE4kkv-3" vertex="1">
+          <mxGeometry y="80" width="400" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="jxNUvcdN7oaNKjAE4kkv-6" value="+ salvar(caminhoArquivo: string, conteudo: string): boolean&lt;br&gt;&lt;br&gt;+ ler(caminhoArquivo: string): string&lt;br&gt;&lt;br&gt;+ copiar(caminhoArquivoOrigem, caminhoArquivoDestino): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="jxNUvcdN7oaNKjAE4kkv-3" vertex="1">
+          <mxGeometry y="88" width="400" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="jxNUvcdN7oaNKjAE4kkv-10" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;Facade&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jxNUvcdN7oaNKjAE4kkv-19" value="compõe" style="text;html=1;align=right;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="400" y="260" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jxNUvcdN7oaNKjAE4kkv-20" value="compõe" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="170" y="260" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jxNUvcdN7oaNKjAE4kkv-21" value="usa" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="360" y="618" width="40" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,5 +1,10 @@
 package br.com.salomaotech.design.patterns;
 
+import br.com.salomaotech.design.patterns.comportamental.EmailNotificacao;
+import br.com.salomaotech.design.patterns.comportamental.EstoqueObserver;
+import br.com.salomaotech.design.patterns.comportamental.EstoqueSubject;
+import br.com.salomaotech.design.patterns.comportamental.ProdutoObserver;
+import br.com.salomaotech.design.patterns.comportamental.WhatsappNotificacao;
 import br.com.salomaotech.design.patterns.criacional.abstractfactory.FabricaFactory;
 import br.com.salomaotech.design.patterns.criacional.abstractfactory.FabricaHp;
 import br.com.salomaotech.design.patterns.criacional.abstractfactory.FabricaMicrosoft;
@@ -148,7 +153,26 @@ public class App {
 
     }
 
+    private static void observer() {
+
+        EstoqueSubject estoqueSubject = new EstoqueSubject();
+
+        EstoqueObserver email = new EmailNotificacao();
+        EstoqueObserver whatsapp = new WhatsappNotificacao();
+
+        estoqueSubject.addObserver(email);
+        estoqueSubject.addObserver(whatsapp);
+
+        ProdutoObserver produto = new ProdutoObserver();
+        produto.setNome("Mouse HP");
+
+        estoqueSubject.addProduto(produto);
+
+    }
+
     public static void main(String[] args) {
+
+        observer();
 
     }
 
