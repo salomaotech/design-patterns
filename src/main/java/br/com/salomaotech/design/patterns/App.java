@@ -1,10 +1,13 @@
 package br.com.salomaotech.design.patterns;
 
-import br.com.salomaotech.design.patterns.comportamental.EmailNotificacao;
-import br.com.salomaotech.design.patterns.comportamental.EstoqueObserver;
-import br.com.salomaotech.design.patterns.comportamental.EstoqueSubject;
-import br.com.salomaotech.design.patterns.comportamental.ProdutoObserver;
-import br.com.salomaotech.design.patterns.comportamental.WhatsappNotificacao;
+import br.com.salomaotech.design.patterns.comportamental.observer.EmailNotificacao;
+import br.com.salomaotech.design.patterns.comportamental.observer.EstoqueObserver;
+import br.com.salomaotech.design.patterns.comportamental.observer.EstoqueSubject;
+import br.com.salomaotech.design.patterns.comportamental.observer.ProdutoObserver;
+import br.com.salomaotech.design.patterns.comportamental.observer.WhatsappNotificacao;
+import br.com.salomaotech.design.patterns.comportamental.strategy.CalculaContext;
+import br.com.salomaotech.design.patterns.comportamental.strategy.FreteCarro;
+import br.com.salomaotech.design.patterns.comportamental.strategy.FreteMoto;
 import br.com.salomaotech.design.patterns.criacional.abstractfactory.FabricaFactory;
 import br.com.salomaotech.design.patterns.criacional.abstractfactory.FabricaHp;
 import br.com.salomaotech.design.patterns.criacional.abstractfactory.FabricaMicrosoft;
@@ -170,9 +173,16 @@ public class App {
 
     }
 
+    private static void strategy() {
+
+        System.out.println("Frete via moto valor R$ " + new CalculaContext(new FreteMoto()).fazerCalculo(20));
+        System.out.println("Frete via carro valor R$ " + new CalculaContext(new FreteCarro()).fazerCalculo(20));
+
+    }
+
     public static void main(String[] args) {
 
-        observer();
+        strategy();
 
     }
 

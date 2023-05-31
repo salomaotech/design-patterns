@@ -1,0 +1,5 @@
+1 - Criar a interface com a estratégia: A interface define o contrato para as diferentes estratégias que serão utilizadas. Ela geralmente contém os métodos que representam as operações a serem realizadas.
+
+2 - Implementar as classes concretas que irão utilizar a estratégia: As classes concretas implementam a interface da estratégia e fornecem a implementação específica para cada estratégia. Cada classe concreta representa uma estratégia diferente.
+
+3 - Criar a classe contexto que irá executar a estratégia utilizando o polimorfismo: A classe contexto é responsável por receber a estratégia selecionada e executar as operações definidas na interface. Ela utiliza o polimorfismo para tratar as diferentes estratégias de forma genérica, permitindo a troca da estratégia em tempo de execução.
